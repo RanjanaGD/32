@@ -145,7 +145,7 @@ function keyPressed(){
 }
 
 async function getBackgroundImg(){
-  var response=await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+  var response=await fetch("http://worldtimeapi.org/api/timezone/Asia/Tokyo");
   var respondJSON=await response.json();
   var dateTime=respondJSON.datetime;
   var hour=dateTime.slice(11,13);
